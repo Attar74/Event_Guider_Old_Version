@@ -6,7 +6,7 @@
 				<div class="content">
 					<h1
 						class="flex mb-4 text-4xl font-extrabold leading-none tracking-tight text-orange-500 md:text-5xl lg:text-4xl light:text-orange">
-						Event Guiders Site Launching Soon!
+						Event Guiders Site Launching Soon! - Development
 					</h1>
 
 					<p>We are working hard on our awesome new website. Stay Tuned!</p>
