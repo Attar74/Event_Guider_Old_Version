@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <carousel :items-to-show="1"  :autoplay="4000">
       <slide v-for="img in images" :key="img">
         <img class="bg-gray-300 carousel__item block w-full h-full" :src="img" alt="First slide" />
@@ -12,16 +12,18 @@
           </h1>
         </div>
       </slide>
-
       <template #addons>
         <navigation />
         <pagination />
       </template>
     </carousel>
+    <SearchInput class="absolute bottom-10 w-full" />
   </div>
 </template>
   
 <script setup>
+import SearchInput from '@/components/SearchInput.vue'
+
 // If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
